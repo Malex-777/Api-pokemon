@@ -1,0 +1,167 @@
+body {
+  background: url('https://wallpaperaccess.com/full/3425944.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.sugerencias {
+  display: none;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #fff;
+  position: absolute;
+  z-index: 10;
+  width: 220px;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+#buscador {
+  position: relative;
+  margin: 24px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  gap: 10px;
+}
+
+#pokemonInput {
+  width: 220px;
+  padding: 10px 12px;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  margin: 0;
+  background: #f5f6fae0;
+  color: #222;
+  transition: border 0.2s;
+}
+
+#pokemonInput:focus {
+  border: 1.5px solid #ffcb05;
+  background: #fffde4;
+}
+
+#btn {
+  background: #dfec6b;
+  color: #000000;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0;
+  transition: background 0.2s;
+}
+
+#btn:hover {
+  background: #727577ee;
+}
+
+#buscador button[type="submit"] {
+  background: #ffcb05;
+  color: #2d2d2d;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+#buscador button[type="submit"]:hover {
+  background: #ffe066;
+}
+
+.sugerencia-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.sugerencia-item:hover {
+  background: #eee;
+}
+
+h1 {
+  margin-top: 40px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.subtitulo {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.contenedor {
+  display: none;
+  background: #3838385d;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 48px 48px 40px 48px;
+  min-width: 420px;
+  max-width: 600px;
+  margin: 40px 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#resultado {
+  width: 100%;
+  font-size: 1.15rem;
+  color: #ffffff;
+  text-align: left;
+  border: none;
+  display: block;
+  word-break: break-word;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.info {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.info img {
+  display: block;
+  margin: 20px auto;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  background: #f5f6fa8a;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.stats-box {
+  background: #0000005e;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+  padding: 18px 20px;
+  margin-top: 16px;
+  font-size: 1.08rem;
+  color: #ffffffde;
+  text-align: left;
+  display: inline-block;
+  min-width: 220px;
+  max-width: 100%;
+}

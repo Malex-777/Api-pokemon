@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Poke API</title>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <h1>Pokemon</h1>
+  <p class="subtitulo">Presiona en el botón "Aleatorio" para descubrir un Pokémon.</p>
+ <form id="buscador" autocomplete="off">
+  <button type="button" id="btn">Aleatorio</button>
+  <input type="text" id="pokemonInput" placeholder="Nombre del Pokémon" required>
+  <button type="submit">Buscar</button>
+  <div id="sugerencias" class="sugerencias"></div>
+</form>
+<div class="contenedor">
+  <div id="resultado"></div>
+</div>
+  <script src="./src/main.js"></script>
+</body>
+</html>
